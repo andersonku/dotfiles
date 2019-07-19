@@ -5,7 +5,7 @@ export HOMEBREW_PREFIX="/home/linuxbrew/.linuxbrew"
 export HOMEBREW_CELLAR="/home/linuxbrew/.linuxbrew/Cellar"
 export HOMEBREW_REPOSITORY="/home/linuxbrew/.linuxbrew/Homebrew"
 export REPO_ROOT="~/cstat"
-export PATH="$REPO_ROOT/stage/linux/bin:$REPO_ROOT/stage/linux/cstat:~/cstat/cstat/bei:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:$PATH"
+export PATH="~/tools/bin:$REPO_ROOT/stage/linux/bin:$REPO_ROOT/stage/linux/cstat:~/cstat/cstat/bei:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:$PATH"
 export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"
 export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
 export SVNDIR=$REPO_ROOT
@@ -16,8 +16,14 @@ alias e="emacsclient"
 alias ga="git add"
 alias gc="git commit"
 alias gs="git status"
-alias goxml="goannacc --cmd=rawxml"
+alias gorawxml="goannacc --cmd=rawxml"
+#alias goxml="goannacc --cmd=xml"
 alias goc="cd ~/cstat/cstat/goanna/checks"
+alias ll="ls -l"
+alias ltr="ls -ltr"
+alias reload="source ~/.bash_profile"
+
+export TERM=xterm-256color
 
 # fd - cd to selected directory
 fd() {
