@@ -1,0 +1,2 @@
+#!/usr/bin/env perl
+print `bash -c "goannacc --cmd=xml $ARGV[0] | tail +4 > $ARGV[0].xml"`;
