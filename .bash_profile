@@ -18,6 +18,10 @@ alias gc="git commit"
 alias gs="git status"
 alias goxml="goannacc --cmd=rawxml"
 alias goc="cd ~/cstat/cstat/goanna/checks"
+alias canon="ssh -Y aku@cannon"
+alias nikon="ssh -Y scripts@nikon"
+alias pana="ssh -Y scripts@panasonic"
+alias nvpn="ssh -Y aku@10.8.0.3"
 
 # fd - cd to selected directory
 fd() {
@@ -26,3 +30,6 @@ fd() {
                   -o -type d -print 2> /dev/null | fzf +m) &&
   cd "$dir"
 }
+
+# opam configuration
+test -r /Users/aku/.opam/opam-init/init.sh && . /Users/aku/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
