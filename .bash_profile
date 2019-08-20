@@ -12,6 +12,7 @@ export SVNDIR=$REPO_ROOT
 export STAGETOP=$REPO_ROOT/stage
 alias makec='goannacc --package-dir=.. --package-dir=../../../gxsl --package-dir=../../../gisl '
 alias ta="tmux attach"
+alias dc="docker-compose"
 alias e="emacsclient"
 alias ga="git add"
 alias gc="git commit"
